@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/estilos.css">
+      <title>TARJETA</title>
+      <link rel="icon" href="imgs/icon.png" sizes="50x50">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+
+<body>
+      <header class="row ">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-center">
+      
+          <a href="" class="navbar-brand col">
+          <img src="imgs/icon.png" alt="IconDD" id="imgIcon" width="50px"></img>
+          <span id="menuDiana">Dianis Desing</span>
+        </a>  
+      </nav>
+    </header>
+<section id="todo">
+
+  <section id="tarjetaT" class="d-flex justify-content-center align-items-center mb-3">
+    <img  id="tarjeta" src="imgs/tarjeta.png">
+   <section id="textos" >
+    <h2 id="nombre">Isak Valentine</h2>
+    <p id="mensaje">Cortinas amarillas</p>
+  </section>
+  </section>
+
+  <input type="button" id="boton" class="btn btn-light d-grid gap-2 col-2 mx-auto" value="crear" onclick="openModal()">
+  
+  <section class="ventana" id="ventana">
+    <section class="contenidoVentana">
+      <h2>Nuevos datos</h2>
+      <label for="nombre02">Nombre:</label>
+			<input type="text" id="nombre02">
+			<label for="mensaje02">Texto:</label>
+			<textarea id="mensaje02"></textarea>
+			
+      <input type="button" onclick="guardar()" value="Guardar">
+      <input type="button" onclick="closeModal()" value="Cancelar">
+    </section>
+  </section>
+
+</section>
+    <script src="js/script.js"></script>
+</body>
+</html>
